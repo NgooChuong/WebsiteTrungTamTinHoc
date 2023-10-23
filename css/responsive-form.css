@@ -1,0 +1,71 @@
+@media (max-width:558px)
+{
+    .course.flex{
+        display: block;
+    }
+    div.content h1
+    {
+        font-size: 2em;
+    }
+    section {
+        margin-top: -60%;
+    }
+    #form1
+    {
+        margin-right: 61px;
+    }
+    input[type="button"]
+    {
+        margin-left: 20%;
+
+    }
+    div.subcrible {
+        margin-top: 2%;
+    }
+    div.sub
+    {
+        margin-top: 0%;
+        margin-right: 0%;
+    }
+    div.sub > h3 {
+        display: block;
+        font-size: 0.5em;
+        padding: 3px 0px; 
+        margin-left: -4%;
+    }
+    td
+    {
+        padding-right: 12px;
+    }
+    div.footer > h1
+    {
+        font-size: 1em;
+    }
+    div.footer > p
+    {
+        font-size: 0.8em;
+    }
+    div.footer > table {
+        margin-left: 7%;
+        margin-top: 1px;
+    }
+    div.footer {
+        padding: 9px 20px;
+    }
+    div.info,input[type="text"], input[type="number"],select
+    {
+        padding:0;
+        padding-right: 0;
+    }
+    .col50, .col45{
+        width: 49%;
+    }
+    .col50 img {
+        width: 100% !important;
+        padding: 0 20px 0 10px ;
+    }
+    .col45 img{
+        width: 88% !important;
+        padding: 0 0 0 20px ;
+    }
+}

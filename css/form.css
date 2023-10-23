@@ -1,0 +1,259 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.flex
+{
+    display: flex;
+}
+header
+{
+ background-image:url(https://www.tapchikientruc.com.vn/wp-content/uploads/2022/03/22A03006-1.jpeg);
+ background-repeat: no-repeat;
+ background-position: top center;
+ background-size: 100%;
+ width: 100%;
+ height: 80vh;
+}
+div.content
+{
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+div.left
+{
+    width: 10%;
+    margin-right: auto;
+    margin-bottom: auto;    
+}
+div.left > img
+{
+   width: 100%;
+}
+div.content h1
+{
+    font-size: 5em;
+    color: blue;
+    text-shadow: 2px 3px 5px lightblue;
+}
+div.subcrible
+{
+    margin-top: 10%;
+
+    background-color: gray;
+}
+div.subcrible > h2
+{
+    display: block;
+    padding-top: 10px;
+    color:#ecf0f1;
+}
+div.subcrible > p
+{
+    text-align: center;
+    color:wheat;
+}
+div.col50
+{
+    width: 50%;
+}
+.col45
+{
+    width: 50%;
+}
+.col50 img
+{
+    width: 60%;
+    padding-left: 10%;
+}
+figure.col45 > img
+{
+    width: 52%;
+}
+ figcaption > a
+{
+    color: #3d3d3d;
+    text-decoration: none;
+}
+figcaption > a:hover
+{
+    color: red;
+}
+section
+{
+    background-color: #ecf0f1;
+    margin-top: 12%;
+}
+section h1
+{
+    text-align:  center;
+    padding: 10px;
+
+}
+.notification{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    animation: col 1s infinite;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+@keyframes col {
+    25%{
+        color: #f53b57;
+    }
+    50%{
+        color: #e67e22;
+    }
+    75%{
+        color: #eb2f06;
+    }
+    100%{
+        color: #2c2c54;
+    }
+}
+
+.notification > span{
+    position:relative;
+    animation: run 10s infinite;
+}  
+section h2
+{
+    text-align: center;
+    color: #ff4d4d
+}
+div.course
+{
+    margin-left: 15%;
+    margin-top: 1%;
+    font-size: 30px;
+}
+div.info,input[type="text"], input[type="number"],select
+{
+    padding: 5px;
+    padding-right: 100px;
+    line-height: 1.5;
+}
+div.course2
+{
+    margin-left: 5%;
+    margin-top: 1%;
+}
+input[type="checkbox"]
+{
+    width: 30px;
+    height: 25px;
+    margin-right: 1%;
+    padding: 10%;
+}
+div.sub
+{
+    margin-top:10%;
+    margin-right: 10%;
+}
+div.sub > h3
+{
+    display: block;
+    font-size: 19px;
+    padding: 15px 20px;
+    margin-left: -70%;
+}
+input[type="button"]
+{
+    margin-left: -15%;
+    padding: 10px 20px;
+}
+div.sub > input[type="submit"]:hover
+{
+    color: #ff3838;
+    background-color: #d2dae2;
+}
+div.click
+{
+    padding: 10px;
+    margin-top: 5%;
+}
+footer
+{
+    background-color: #ff3838;
+}
+div.footer
+{
+    padding: 10px 20px;
+}
+div.footer > h1
+{
+    text-align: center;
+}
+div.footer > p
+{
+    text-align: center;
+}
+div.footer > table
+{
+    margin-left: 30%;
+    margin-top: 10px;
+}
+table > tbody > tr:nth-child(even)
+{
+    color:#2c2c54;
+
+} 
+:root
+{
+    --black:#333;
+    --white:#f1f1f1;
+    --shadow:rgb(0,0,0,0.2);
+}
+section .banner
+{
+    position:relative;
+    background: var(--white);
+}
+section > div.toggle
+{
+    position:absolute;
+    right: 40px;
+    top: 20px;
+    font-size: 1em;
+    font-weight: 500;
+    color:var(--black);
+    cursor: pointer;
+    user-select: none;
+}
+section > div.toggle::before
+{
+    content:'\f186';
+    font-family: fontAwesome;
+    padding: 8px;
+    background: var(--black);
+    color: var(--white);
+    font-size: 1.2em;
+    border: 1px solid white;
+    box-shadow: 0 5px 10px var(--shadow);
+}
+.dark
+{
+    --black:#f1f1f1;
+    --white:#333;
+    --shadow:rgb(255,255,255,0.2);
+}
+section .toggle.active::before
+{
+    content:'\f185';
+    font-family: fontAwesome;
+
+}
+#form1 .loi{
+  border:1px solid red;
+  background-color: yellow;
+}
+#form1 #baoloi
+{
+    font-size: 16px;
+    margin: 0 auto;
+    color: red;
+}

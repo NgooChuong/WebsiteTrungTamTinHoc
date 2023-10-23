@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khóa học Thiết Kế Website - Hiệu Ứng Phim - Trung Tâm Tin Học - Đại học Mở</title>
+    <meta name="keywords" content="tin học đời sống,chứng chỉ tin học"/>
+    <meta name="description" content="Trung tâm tin học Đại học Mở TPHCM"/>
+    <meta http-equiv="REFRESH" content="1800"/>
+    <link rel="shortcut icon" href="/img/logo1.png">
+    <link href="/css/trang2.css" rel="stylesheet"/>
+    <link href="/css/resposive2.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="/javaScript/index2.js"></script>
+<script src="/javaScript/form.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+</head>
+<body id="body">
+    <div class="body-son" id="Header">
+        <header>
+            <div class="container">
+                <img src="/img/logo1.png" alt="logo"/>
+                <div class="name">
+                    <h1>Trung tâm tin học<h1>
+                    <h2>Thiết kế website<h2>
+                    </div>
+                <div class="search">
+                    <nav>
+                        <ul class="menu">
+                            <li class="sub">   
+                                <a href="#">Đào tạo</a>
+                                <ul class="menu menu1">
+                                    <li><a href="#"><i class="fa fa-paint-brush"></i>Đồ họa đa truyền thông</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-earth-asia"></i>Thiết kế wed</a></li>
+                                    <li><a href="#"><i class="fa fa-desktop"></i>Tin học văn phòng</a></li>
+                                    <li><a href="#"><i class="fa fa-graduation-cap"></i>Tin học văn phòng chuẩn quốc tế(MOS)</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-circle-right"></i>Data Analysis</a></li>
+                                    <li><a href="#"><i class="fa fa-tablet"></i>Lập trình di động</a></li>
+                                    <li><a href="#"><i class="fa fa-check-circle"></i>Kiểm thử phần mềm</a></li>
+                                    <li><a href="#"><i class="fa fa-sitemap"></i>Mạng máy tính</a></li>
+                                    <li><a href="#"><i class="fa fa-cogs"></i>Data Science & Machine Learning</a></li>
+                                    <li><a href="#"><i class="fa fa-database"></i>Lập trỉnh & CSDL</a></li>
+                                    <li><a href="#"><i class="fa fa-bar-chart"></i>Internet Marketing</a></li>
+                                    <li><a href="#"><i class="fa fa-wrench"></i>Lập trình thiếu niên</a></li>
+                                </ul>
+                            </li>
+                        <li class="sub">
+                            <a href="#">Dịch vụ</a>
+                            <ul class="menu menu1">
+                                <li><a href="#"><i class="fa fa-desktop"></i>Phát triển phần mềm</a></li>
+                                <li><a href="#"><i class="fa fa-institution"></i>Tư vấn quản lí dự án</a></li>
+                                <li><a href="#"><i class="fa fa-edit"></i>Cung cấp thiết bị-phần mềm</a></li>
+                                <li><a href="#"><i class="fa fa-database"></i>Đào tạo theo yêu cầu</a></li>
+                                <li><a href="#"><i class="fa fa-group"></i>Quản lí thiết bị hệ thống mạng tự động</a></li>
+                                <li><a href="#"><i class="fa fa-globe"></i>Hệ thống hội nghị truyền hỉnh MoboMeeting</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub"><a href="#">Tin tức</a></li>
+                        <li class="sub"><a href="#">Liên hệ</a></li>
+                        </ul> 
+                    </nav>
+                    <div class="icon">
+                        <div class="shoppingcart"> 
+                            <i class="fa fa-shopping-cart icon-small" onclick="show(this)">
+                            </i>
+                            <span>Khóa học đã chọn</span>
+                            <div id="show">
+                               <table id="tab" border="1">
+                                    <thead id="0">
+                                        <td>Lớp</td>
+                                        <td>Học phí</td>
+                                        <td>Thời gian</td>
+                                        <td>Ngày khai giảng</td>
+                                        <td>Địa điểm học</td>
+                                        <td></td>
+                                    </thead>
+                                    
+                               </table>
+                            </div>
+                        </div>
+                        <input type="text" id="input" placeholder="Tìm "/> <i class="fa-solid fa-magnifying-glass"></i>
+                    </div> 
+            </div>
+        </header> 
+        <div class="mobile-menu" onclick="thanhmenu(this)">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="bar" >
+            <ul class="menu menu-dad" id="cha" >
+                <li><a href="http://127.0.0.1:5501/html/index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li>
+                    <a href="#">Lịch khai giảng</a>
+                </li>
+                <li class="sub">
+                    <a href="#" onclick=" thanhmenucon(this)">Tin tức-sự kiện</a>
+                    <ul class="menu menu1" id="con">
+                        <li>
+                            <a href="#"><i class="fa-solid fa-check"></i> <p>Hội thảo-học thử miễn phí</p> </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-check"></i> <p> Tin tức</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-check"></i><p> Kiến thức</p></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Chuyên viên đồ họa</a> 
+                </li>
+                <li class="sub">
+                    <a href="#" onclick="thanhmenucon1(this)">Khóa dài hạn</a>
+                    <ul class="menu menu1 " id="ae-con">
+                        <li>
+                            <a href="#"><i class="fa-solid fa-check"></i><p> Kỹ thuật viên thiết kế website</p></a>
+                        </li>
+                    </ul> 
+                </li>
+                <li class="sub">
+                    <a href="#" onclick="thanhmenucon2(this)" >Khóa ngắn hạn</a>
+                    <ul class="menu menu1" id="ae-con1">
+                        <li>
+                            <a href="#"><i class="fa-solid fa-check"></i> <p>Thiết kế website</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-check"></i> <p>Thiết kế giao diện website toàn phần</p> </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-check"></i> <p>Thiết kế giao diện website</p> </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-check"></i> <p> Thiết kế Amination & Responsive Web</p></a>
+                        </li>
+
+                    </ul> 
+                </li>
+                <li class="sub" >
+                    <a href="#" onclick="thanhmenucon3(this)">Góc học viên</a>
+                    <ul class="menu menu1" id="ae-con2">
+                        <li>
+                            <a href="#"><i class="fa-solid fa-check"></i> <p> Cảm nhận học viên</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-check"></i> <p> Sản phẩm học viên</p></a>
+                        </li>
+                    </ul> 
+                </li>
+                <li><a href="#">Giới thiệu việc làm</a></li>
+            </ul>
+        </nav>
+        <div class="waves">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+        </div>
+    </div>
+    <div id="slide">
+        <img  src="/img/pic2.png" id="hinh">
+        <div class="dieuhuong">
+         <i class="fa-regular fa-circle-left" onclick="prev()"></i>
+         <i class="fa-regular fa-circle-right" onclick="next()"></i>
+        </div>
+     </div>
+    <section class="hidden">
+                <div class="banner">
+                    <div class="video">
+                        <h2 >CHÍNH SÁCH ƯU ĐÃI CỦA KHÓA HỌC</h2>
+                        <img class="lazy" src="/img/pic.png" alt="picture">
+                        <video class="lazy" muted autoplay="1" loop="1"> <source src="/img/video1.mp4"  type="video/mp4"></video>
+                        <video class="lazy" muted autoplay="1" loop="1"> <source src="/img/video2.mp4" type="video/mp4"></video>
+                        <video class="lazy" muted autoplay="1" loop="1"> <source src="/img/video3.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="contents">
+                        <div class="content_1">
+                            <h1 class="boss-header">
+                                [NEW] KỸ THUẬT VIÊN THIẾT KẾ WEBSITE
+                            </h1>
+                            <ul class="boss-body">
+                                <li class="boss-con">
+                                <p><i class="fa-solid fa-plus"></i> Chương trình học thiết kế ứng dụng web UX/UI 
+                                    thực tế với các sản phẩm minh họa trực quan, 
+                                    sinh động. Học lý thuyết song song với việc
+                                    thực hành thiết kế liên tục và trao đổi với 
+                                    Giảng viên để học hỏi kinh nghiệm thực tế.</p>
+
+                                </li>
+                                <li class="boss-con">
+                                    <p><i class="fa-solid fa-plus"></i> Cập nhật ứng dụng thiết kế giao diện web (layout web) 
+                                    tích hợp trải nghiệm người dùng (UI/UX)</p>
+
+                                </li>
+                                <li class="boss-con">
+                                    <p>
+                                        <i class="fa-solid fa-plus"></i> 
+                                        Cập nhật xu hướng thiết kế Web mới: Responsive Web với Bootstrap
+                                    </p>
+                                </li>
+                                <li class="boss-con">
+                                    <p>
+                                        <i class="fa-solid fa-plus"></i> 
+                                    Cập nhật thêm công cụ thiết kế web/dựng web với Wordpress
+                                    </p>
+                                </li>
+                                <li class="boss-con">
+                                    <p>
+                                        <i class="fa-solid fa-plus"></i> 
+                                        Phù hợp cho người mới bắt đầu
+                                    </p>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content_2 content">
+                            <h1 class="boss-header" >BẠN NHẬN ĐƯỢC GÌ KHI THAM GIA KHÓA HỌC?</h1>
+                                <ul class="boss-body">
+                                    <li class="boss-con">
+                                        <i class="fa-solid fa-location-arrow arrow" ></i>Nắm vững các nguyên tắc và yếu tố mỹ thuật khi thiết kế giao diện Website
+                                    </li>
+                                    <li class="boss-con">
+                                        <i class="fa-solid fa-location-arrow arrow"></i>Thành thạo nhóm công cụ trong thiết kế Website
+                                    </li>
+                                    <li class="content boss-con">
+                                        <i class="fa-solid fa-location-arrow arrow" class="boss-header"></i>Tự tin ứng tuyển làm việc tại các vị trí:
+                                        <ul class="boss-body">
+                                            <li class="boss-con">Thiết kế giao diện Web</li>
+                                            <li class="boss-con">Thiết kế Website tương thích với thiết bị di động</li>
+                                            <li class="boss-con">Phát triển Web</li>
+                                            <li class="boss-con">Thiết kế Web động - Web tĩnh</li>
+                                        </ul>
+                                    </li>
+                                    <li class="boss-con" >
+                                        <i class="fa-solid fa-location-arrow arrow"></i>Chứng chỉ <strong>"Kỹ thuật viên Thiết kế Website"</strong>
+                                        do Trung Tâm Tin Học - Trường ĐH Khoa Học Tự Nhiên cấp
+                                    </li>
+                                <li class="boss-con"><i class="fa-solid fa-location-arrow arrow"></i>Cơ hội dược hỗ trợ việc làm sau khi hoàn thành khóa học</li>
+                                    <li class="boss-con"><i class="fa-solid fa-location-arrow arrow"></i>Xem thêm: <span>sản phẩm học viên</span> sau khóa học <a href="#">Tại đây</a></li>
+                                </ul>
+                        </div>
+                        <div class="content_3 content">
+                            <h1 class="boss-header">BẠN LO LẮNG VỀ SỰ PHÙ HỢP CỦA KHÓA HỌC NÀY?</h1>
+                            <div class="boss-body">
+                                <div class="content_3_1 content boss-con">
+                                    <p> <i class="fa-solid fa-location-arrow arrow"></i>Hãy an tâm nếu bạn hiện đang là: </p>
+                                    <ul>
+                                        <li>Sinh viên các trường Đại học, Cao đẳng, Trung cấp nghề chưa có kinh nghiệm thực tế, đang cần trang bị và hoàn thiện một cách có hệ thống kiến thức về Thiết kế Web.</li>
+                                        <li>Người đi làm cần bổ sung, củng cố và chuẩn hóa kiến thức để có thể tự tay chỉnh sửa giao diện Web, tăng khả năng thăng tiến trong nghề nghiệp</li>
+                                        <li>Các bạn yêu thích thiết kế Website và mong muốn một cơ hội nghề nghiệp, thay đổi ngành nghề,…</li>
+                                    </ul>
+                                </div>
+                                <div class="content_4_1 content boss-con">
+                                    <p><i class="fa-solid fa-location-arrow arrow"></i>Thiết kế giao diện Web UI/UX: </p>
+                                    <ul>
+                                        <li>Các công cụ thiết kế cơ bản thiết kế layout</li>
+                                        <li> Thiết kế banner web đa kích thước</li>
+                                        <li>Ứng dụng Grid Layout thiết kế khung trang web</li>
+                                        <li >Responsive Layout Web với 3 kích thước thiết bị phổ biến</li>
+                                        <li>Landing Page: Bố cục trang Landing Page</li>
+                                        <li>Ứng dụng UI/UX trong thiết kế Header Sider</li>
+                                        <li>Màu sắc/ Hình ảnh website:Ứng dụng UI/UX thiết kế Menu, navigation và footer </li>
+                                        <li>Font chữ cho web: Ứng dụng UI/UX Ecomerce / Blog & Magazine,...</li>
+                                        <li>Ứng dụng UI/UX trên thành phần web: form, media...</li>
+                                        <li>Thiết kế layout Responsive web: Porfilio cá nhân ứng dụng UI/UX</li>
+                                        <li>Thủ thuật tối ưu hóa hình ảnh Web và thủ thuật xuất ảnh cho website</li>
+                                    </ul>
+                                </div>
+                                <div class="content_4_2 content boss-con">
+                                    <p><i class="fa-solid fa-location-arrow arrow"></i>Phát triển Website với Dreamweaver: </p>
+                                <ul>
+                                    <li>Ngôn ngữ HTML</li>
+                                    <li>Thiết kế, trình bày trang web</li>
+                                    <li>Xây dựng nội dung trang web</li>
+                                    <li>CSS-Cascading Style Sheet</li>
+                                    <li>Sử dụng Behavior cho các đối tượng trong trang web</li>
+                                    <li>Thiết kế biểu mẫu-FORM</li>
+                                    <li>Xây dựng trang mẫu - Template</li>
+                                    <li>Slide - Tạo nhanh Template</li>
+                                    <li>Tự thiết kế website đơn giản</li>
+                                    <li>Xây dựng trang khung - Framesets</li>
+                                </ul>
+                                </div>
+                                <div class="content_4_3 content boss-con">
+                                    <p><i class="fa-solid fa-location-arrow arrow"></i>Thiết kế web động với Animtion</p>
+                                    <ul>
+                                        <li>Tổng quan Animation</li>
+                                        <li>Kết hợp hiệu ứng cho đối tượng</li>
+                                        <li>Hiệu ứng chuyển trang</li>
+                                        <li>Thiết kế Banner</li>
+                                        <li>Các dạng Banner</li>
+                                        <li>Diễn hoạt Animation nâng cao</li>
+                                    </ul>
+                                </div>
+                                <div class="content_4_4 content boss-con">
+                                    <p><i class="fa-solid fa-location-arrow arrow"></i>Thiết kế Web cho thiết bị di động (Responsive Web với Bootstrap)</p>
+                                    <ul>
+                                        <li>Khái quất về Responsive (bố cục Responsive, phân tích Responsive chuẩn, cấu trúc CSS trong Responsive)</li>
+                                        <li>Xây dựng trang Responsive cơ bản</li>
+                                        <li>Hệ thống lưới (Grid) & ứng dụng xây dựng Responsive Web với Bootstrap theo dạng lưới.</li>
+                                        <li>CSS3 Frarework - Ứng dụng Framework dụng Responsive</li>
+                                        <li>Ứng dụng Layout cá nhân tương thích Responsive</li>
+                                    </ul>
+                                </div>
+                                <div class="content_4_5 content boss-con">
+                                    <p><i class="fa-solid fa-location-arrow arrow"></i>Thiết kế Web với Wordpress + Đồ án môn hình</p>
+                                    <ul>
+                                        <li>Giới thiệu và cài đặt WordPress (cài đặt locolhost, cấu hình MySQL, Cài đặt WordPress)</li>
+                                        <li>Tạo bài viết (post) trong WordPress </li>
+                                        <li>Quản lí và thiết bị bình luận</li>
+                                        <li>Chèn Video, hình ảnh và WordPress</li>
+                                        <li>Tạo page</li>
+                                        <li>Cài đặt Themes </li>
+                                        <li>Cài đặt Plugin</li>
+                                        <li>Quản lý và thiết lập Menu</li>
+                                        <li>Sử dụng Widget</li>
+                                        <li>Tùy biến quyền người dùng</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_5">
+                            <h1 class="boss-header">PHẦN MỀM SỬ DỤNG</h1>
+                            <ul class="boss-body">
+                                <li class="boss-con"><i class="fa-solid fa-location-arrow arrow"></i>Adobe Photoshop</li>
+                                <li class="boss-con"><i class="fa-solid fa-location-arrow arrow"></i>Dreamweaver (HTML5, CSS, jquery)</li>
+                                <li class="boss-con"><i class="fa-solid fa-location-arrow arrow"></i>Responsive với Bootstrap</li>
+                                <li class="boss-con"><i class="fa-solid fa-location-arrow arrow"></i>Animation</li>
+                                <li class="boss-con"><i class="fa-solid fa-location-arrow arrow"></i>WordPress</li>
+                            </ul>
+                        </div>
+                        <div class="content_6">
+                            <h1 class="boss-header">MỨC ĐẦU TƯ DÀNH CHO KHÓA HỌC</h1>
+                            <ul class="boss-body">
+                                <li class="boss-con"><i class="fa-solid fa-location-arrow arrow"></i>Khóa học của bạn là 120 giờ và làm hao hụt 7.800.000Đ trong nguồn tài chính</li>
+                                <li class="boss-con"><i class="fa-solid fa-location-arrow arrow"></i>Chúng tôi sẽ <strong>linh hoat quỹ thời gian </strong>cho bạn trong trường hợp có sự gián đoạn khi tham gia khóa học</li>
+                                <li class="boss-con"><i class="fa-solid fa-location-arrow arrow"></i>Hỗ trờ <span>1.100.000đ học phí</span> khi bạn đăng ký online và hoàn tất trước hạn, học phí <strong>học phí chính thức 6.700.000đ</strong></li>
+                            </ul>
+                        </div>
+                        <div class="content_8">
+                            <h1 class="boss-header" >BẠN SẼ BỎ LỠ ĐIỀU GÌ NẾU KHÔNG THAM GIA KHÓA HỌC NÀY?</h1>
+                            <ul class="boss-body">
+                                <li class="boss-con"><i class="fa-solid fa-location-arrow arrow"></i>Một chương trình học xuyên suốt với giáo trình được biên soạn bài bản, thực hành liên tục giúp các bạn tự hoàn thiện Website của mình trong quá trình học</li>
+                                <li class="boss-con"><i class="fa-solid fa-location-arrow arrow"></i>Tự do thể hiện sự sáng tạo của bản thân với giao diện Web thật bắt mắt và hợp xu hướng.</li>
+                                <li class="boss-con"><i class="fa-solid fa-location-arrow arrow"></i>Cơ hội trở thành nhà thiết kế Website thực thụ và tăng thêm thu nhập</li>
+                            </ul>
+                        </div>
+                        <div class="content_9">
+                            <h1 class="boss-header">Để hoàn tất học phí khóa học tại Trung Tâm Tin Học Trường Đại Học Mở, bạn có thể chọn một trong hai phương thức thanh toán sau:</h1>
+                            <ul class="boss-body">
+                                <li class="boss-con"><strong>Cách 1: Thanh toán trực tiếp tại Phòng ghi danh của Trung Tâm Tin Học </strong>
+                                    <ul>
+                                        <li> <strong>- Địa chỉ: </strong> </li>
+                                        <li> <strong>- Giờ Làm việc: </strong>
+                                            <ul>
+                                                <li>Thứ 2 đến thứ 6: 7h30-11h30 và 13h-19h</li>
+                                                <li>Thứ 7,CN:  7h30-11h30 và 13h-17h</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="boss-con"><strong>Cách2: Chuyển khoảng</strong>
+                                    <ul>
+                                        <li><strong>* Só tài khoảng của trung tâm: </strong>
+                                            <ul>
+                                                <li>Tên TK: Trung tâm tin học</li>
+                                                <li>Số tài khoảng: <strong>1130 0000 4466</strong></li>
+                                                <li>Tại: Ngân Hàng BIDV</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar">
+                    <div class="head">
+                        <h1>
+                            [NEW] KỸ THUẬT VIÊN THIẾT KẾ WEBSITE
+                        </h1>
+                        <p>
+                            <strong>Học Phí: <del> 7.800.000 </del> -  ƯU ĐÃI: chỉ còn </strong> <span> 6.700.000đ</span> <strong>khi ghi danh online + hoàn tất trước <span>ngày 30/07/2022</span></strong>
+                        </p>
+                        <ul>
+                            <li> <strong>Cấp độ </strong>: Khóa học dành cho người mới bắt đầu</li>
+                            <li><strong>Môn học: </strong>Layout Web UI/UX, HTML5-CSS3-Jquery, Animation,Responsive,WordPress + Đồ án</li>
+                        </ul>
+                    </div>
+                    <div class="table">
+                        <table border="1" >
+                            <thead class="0">
+                                <td>Lớp</td>
+                                <td>Học phí</td>
+                                <td>Thời gian</td>
+                                <td>Ngày khai giảng</td>
+                                <td>Dịa điểm học</td>
+                                <td></td>
+                            </thead>
+                            <tbody>
+                                <tr class="1.0" >
+                                    <td class="1">DHW1_276SCCN</td>
+                                    <td class="1">7.800.000Đ</td>
+                                    <td class="1">Chủ Nhật (08:30 - 11:45) & (13:30 - 16:45)</td>
+                                    <td class="1">26/06/2022</td>
+                                    <td class="1">227 Nguyễn Văn Cừ, Q5</td>
+                                    <td class="1"><button value="0" onclick="takeThis(this)">Đăng ký</button></td>
+                                </tr>
+                                <tr class="2">
+                                    <td>DHW1_276SCCNO</td>
+                                    <td>6.700.000Đ</td>
+                                    <td>Chủ Nhật (08:30 - 11:45) & (13:30 - 16:45)</td>
+                                    <td>26/06/2022</td>
+                                    <td>Online</td>
+                                    <td><button value="1" onclick="takeThis(this)">Đăng ký</button></td>
+                                </tr>
+                                <tr class="3">
+                                    <td>DHW1_277S246O</td>
+                                    <td>7.800.000Đ</td>                        
+                                    <td>Thứ 2-4-6 (08:30 - 11:30)</td>
+                                    <td>25/07/2022</td>
+                                    <td>227 Nguyễn Văn Cừ, Q5</td>
+                                    <td><button value="2" onclick="takeThis(this)">Đăng ký</button></td>
+                                </tr>
+                                <tr class="4">
+                                    <td>DHW1_277SCCN</td>
+                                    <td>6.700.000Đ</td>                        
+                                    <td>Chủ Nhật (08:30 - 11:45) & (13:30 - 16:45)</td>
+                                    <td>25/07/2022</td>
+                                    <td>Online</td>
+                                    <td><button value="3" onclick="takeThis(this)">Đăng ký</button></td>
+                                </tr>
+                                <tr class="5">
+                                    <td>DHW1_277SCCNO</td>
+                                    <td>7.800.000Đ</td>                        
+                                    <td>Chủ Nhật (08:30 - 11:45) & (13:30 - 16:45)</td>
+                                    <td>31/07/2022</td>
+                                    <td>227 Nguyễn Văn Cừ, Q5</td>
+                                    <td><button value="4" onclick="takeThis(this)">Đăng ký</button></td>
+                                </tr>
+                                <tr class="6">
+                                    <td>DHW1_277T246</td>
+                                    <td>6.700.000Đ</td>                        
+                                    <td>Thứ 2-4-6 (17:45 - 20:45)</td>
+                                    <td>31/07/2022</td>
+                                    <td>Online</td>
+                                    <td><button value="5" onclick="takeThis(this)">Đăng ký</button></td>
+                                </tr>
+                                <tr class="7" >
+                                    <td>DHW1_277T357</td>
+                                    <td>7.800.000Đ</td>                        
+                                    <td>Thứ 3-5-7 (17:45 - 20:45)</td>
+                                    <td>20/07/2022</td>
+                                    <td>227 Nguyễn Văn Cừ, Q5</td>
+                                    <td><button value="6" onclick="takeThis(this)">Đăng ký</button></td>
+                                </tr>
+                                <tr class="8">
+                                    <td>DHW1_277T357O</td>
+                                    <td>6.700.000Đ</td>                        
+                                    <td>Thứ 3-5-7 (17:45 - 20:45)</td>
+                                    <td>26/07/2022</td>
+                                    <td>Online</td>
+                                    <td><button value="7" onclick="takeThis(this)">Đăng ký</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="relative_sub">
+                    <h1 class="subject"><span>CÁC MÔN HỌC LIÊN QUAN</span></h1>
+                    <div class="box-dad">
+                        <div class="box box1">
+                            <h2>Chuyên viên thiết kế đồ họa</h2>
+                        </div>
+                        <div class="box box2">
+                            <h2>kỹ thuật viên thiết kế đồ họa</h2>
+                        </div>
+                        <div class="box box3">
+                            <h2>kỹ thuật viên thiết kế đồ họa chuyên</h2>
+                        </div>
+                        <div class="box box4">
+                            <h2>chuyên viên thiết kế đồ họa và motion</h2>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <footer class="fixed-footer">
+        <div class="footer">
+            <div class="content">
+                <h2>Thông tin liên hệ:</h2>
+                <p><i class="fa-solid fa-location-dot add"></i> 97 Võ Văn Tần, Phường 6, Quận 3, Thành phố Hồ Chí Minh</p>
+                <p><i class="fa-solid fa-phone phone" ></i> (08) 3930 0209</p>
+                <a href="mailto:noreply@ou.edu.vn"><i class="fa-solid fa-envelope"></i> ou.edu.vn</a>
+                <p><i class="fa-solid fa-phone phone" ></i> (08) 3930 0085</p>
+                <a href="#"><i class="fa-solid fa-building-circle-arrow-right"></i> www.trungtamtinhocou.edu.vn</a>
+                <p><i class="fa-solid fa-location-dot add"></i> 371 Nguyễn Kiệm, P. 3, Q. Gò Vấp, TP. Hồ Chí Minh</p>
+            </div>
+            <div class="content1">
+                <h2>Chính sách và bản quyền</h2>
+                <p><i class="fa-solid fa-check"></i> Điều khoản dịch vụ</p>
+                <p><i class="fa-solid fa-check"></i> Chính sách bảo mật</p>
+                <div class="box">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="license">
+            <div class="line"></div>
+            <h2>Bản quyền &copy; của tôi</h2>
+            <span class="goHead">
+                <a href="#Header"><img src="/img/node.png" alt="Node"></a>
+            </span>
+        </div>
+    </footer>
+   
+
+</body>

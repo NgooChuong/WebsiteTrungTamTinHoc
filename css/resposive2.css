@@ -1,0 +1,153 @@
+@media screen and (max-width:580px) {
+    .container {
+        display: block;
+    }
+    div.container > img {
+        display: none;
+    }
+    .mobile-menu{
+        position: absolute;
+        top: 3%;
+        left: 0;
+        width: 50%;
+    }
+    .mobile-menu i{
+        display: block;
+        width: 10%;
+    }
+    .sub{
+        position: relative;
+    }
+    ul.menu1{
+        position: absolute;
+        left: 87%;
+        opacity: 0;
+        z-index: 999999999999;
+        background-color: rgba(52, 152, 219);
+        font-size: 15px;
+        transform: translateX(-300%);
+        transition: 1s;
+        display: block;
+        width: 50%;
+    }
+    #slide{
+        height: 300px;
+        margin-bottom:20px ;
+    }
+    .dieuhuong i{
+        top: 40% !important;
+    }
+    #show table#tab{
+        left: 27%;
+        width: 325px;
+        transform: translateY(-39%);
+        top: 0;
+        font-size: 11px;
+    }
+    .top{
+        display: none;
+    }
+    .sticky{
+        position: unset;
+       
+    }
+    .list-col td:nth-child(2),.list-col td:nth-child(4),.list-col td:nth-child(5), #tab thead td:nth-child(2), #tab thead td:nth-child(4),#tab thead td:nth-child(5){
+        display: none;
+    }
+    ul.menu1 li a{
+        display: flex;
+    }
+    .menu1::after{
+        border-color: transparent #000 transparent transparent;
+    }
+    div.name{
+        font-size: .5em;
+        margin-right: 1.5rem;
+        float: right;
+        margin-top: 5px;
+    }
+    div.search {
+        margin-left: unset;
+    }
+    ul.menu{
+        padding: unset;
+        width: 95%;
+    }
+    ul.menu >li > a {
+        padding: unset;
+        margin-left: 2rem;
+    }
+    .menu.menu-dad {
+        display: block;
+        position: absolute;
+        bottom: 42%;
+        left: 0;
+        transform: translateX(-300%);
+        z-index: 999999999;
+        transition: 1s;
+        overflow: unset;
+        width: 50%;
+    }
+    .menu-dad > li{
+        width: 100%;
+        padding: 10px 0;
+    }
+    .boss-header, .video > h2, .head > h1, .head > p{
+        font-size: 1rem;
+    }
+    .calendar .head >ul{
+        padding-left: unset;
+    }
+    .calendar .table{
+        width: 3%;
+
+    }
+    .calendar .table table td:nth-child(3) ,.calendar .table table td:nth-child(4) ,.calendar .table table td:nth-child(5) {
+       display: none;
+    }
+    .calendar .table table td {
+        padding: 5px 15px;
+    }
+    div.calendar{
+        width: 370px;
+    }
+    footer{
+        position:unset;
+        height: 0;
+    }
+    .footer{
+        display: block;
+        background-color: rgba(52, 152, 219, 0.5);
+        width: 375px;
+    }
+    h1.subject > span{
+        width: unset;
+        border-radius: unset;
+    }
+    .box-dad .box {
+        width: calc(100% / 2);
+        height: 16vh;
+        margin: 20px 0 0 0 ;
+    }
+    .box-dad .box:hover {
+        transform: scale(0.6);
+        transition: 2s;
+    }
+    .hidden{
+        margin-bottom: 10%;
+        margin-top: -35px;
+    }
+    .box-dad .box h2{
+        font-weight: unset;
+        left: 0;
+    }
+    .footer .content1 .box a {
+        color: #000;
+        border: 1px solid #000;
+        margin-bottom: 10px;
+    }
+    .license{
+        background-color: rgba(52, 152, 219, 0.5);
+    }
+    
+}

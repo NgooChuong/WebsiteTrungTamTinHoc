@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trung tâm tin học</title>
+    <meta name="keywords" content="tin hoc,day hoc"/>
+    <meta name="description" content="trung tam tin hoc"/>
+    <meta http-equiv="REFRESH" content="1800"/>
+    <link rel="shortcut icon" href="/img/logo1.png">
+    <link href="/css/tinhoc.css" rel="stylesheet"/>
+    <link href="/css/responsive.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="/javaScript/index.js"></script>
+</head>
+<body>
+     <header id="Header">
+       <div class="container">
+            <img src="/img/logo1.png" alt="logo"/>
+            <div class="name">
+                <h1>Trường Đại học Mở</h1>
+                <h1>Trung tâm tin học</h1>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Tìm "/> <i class="fa-solid fa-magnifying-glass"></i>
+            </div> 
+            <button value="TURN ON" id="but" onclick="bRCL(this)"><i class="fa-solid fa-power-off"></i></button>
+
+       </div>
+     </header> 
+     <div class="mobile-menu" onclick="thanhmenu(this)">
+        <i class="fa-solid fa-bars"></i>
+    </div> 
+     <nav id="cha" class="nav-pc">
+       <ul class="menu menucha">
+        <li><a href="" target="_blank" id="house"><i class="fa-solid fa-house"></i></a></li>
+        <li class="sub">  
+            <a href="#" onclick="thanhmenucon(this)">Chương trình đào tạo</a>
+            <ul id="con" class="menu menu1">
+                <li><a href="#"><i class="fa fa-paint-brush"></i>Đồ họa đa truyền thông</a></li>
+                <li><a href="http://127.0.0.1:5501/html/trang2.html"><i class="fa-solid fa-earth-asia"></i>Thiết kế wed</a></li>
+                <li><a href="#"><i class="fa fa-desktop"></i>Tin học văn phòng</a></li>
+                <li><a href="http://127.0.0.1:5501/html/trang3.html"><i class="fa fa-graduation-cap"></i>Tin học văn phòng chuẩn quốc tế(MOS)</a></li>
+                <li><a href="#"><i class="fa fa-arrow-circle-right"></i>Data Analysis</a></li>
+                <li><a href="#"><i class="fa fa-tablet"></i>Lập trình di động</a></li>
+                <li><a href="#"><i class="fa fa-check-circle"></i>Kiểm thử phần mềm</a></li>
+                <li><a href="#"><i class="fa fa-sitemap"></i>Mạng máy tính</a></li>
+                <li><a href="http://127.0.0.1:5501/html/trang4.html"><i class="fa fa-cogs"></i>Data Science & Machine Learning</a></li>
+                <li><a href="#"><i class="fa fa-database"></i>Lập trỉnh & CSDL</a></li>
+                <li><a href="#"><i class="fa fa-bar-chart"></i>Internet Marketing</a></li>
+                 <li><a href="#"><i class="fa fa-wrench"></i>Lập trình thiếu niên</a></li>
+            </ul>
+        </li>
+        <li ><a href="#">Tin tức</a></li>
+        <li class="sub">
+            <a href="#" onclick="thanhmenucon1(this)">Dịch vụ</a>
+            <ul class="menu menu1" id="ae-con"  >
+                <li><a href="#"><i class="fa fa-desktop"></i>Phát triển phần mềm</a></li>
+                <li><a href="#"><i class="fa fa-institution"></i>Tư vấn quản lí dự án</a></li>
+                <li><a href="#"><i class="fa fa-edit"></i>Cung cấp thiết bị-phần mềm</a></li>
+                <li><a href="#"><i class="fa fa-database"></i>Đào tạo theo yêu cầu</a></li>
+                <li><a href="#"><i class="fa fa-group"></i>Quản lí thiết bị hệ thống mạng tự động</a></li>
+                <li><a href="#"><i class="fa fa-globe"></i>Hệ thống hội nghị truyền hỉnh MoboMeeting</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Hướng dẫn thanh toán</a></li>
+        <li><a href="#">Liên hệ</a></li>
+        <li><a href="http://127.0.0.1:5501/html/formSIGN.html"><i class="fa fa-users"></i> Đăng nhập</a></li>
+       </ul> 
+     </nav>
+    <aside class="ads">
+        <ul class="menu3">
+            <li>
+                <a href="#"><img src="/img/FB.png" alt="facebook"/></a>
+             </li>
+             <li>
+                <a href="#"><img src="/img/zalo.png" alt="facebook"/></a>
+             </li>
+             <li>
+                 <a href="#"><img src="/img/TW.png" alt="facebook"/></a>
+              </li>
+              <li>
+                 <a href="#"><img src="/img/YT.png" alt="facebook"/></a>
+              </li>     
+        </ul>
+    </aside>
+    <aside class="ads regis">
+        <a href="http://127.0.0.1:5501/html/form.html"><img src="https://www.freeiconspng.com/uploads/register-button-png-29.png" alt="button"></a>
+    </aside>
+     <div class="notification"><i class="fa-solid fa-bullhorn"></i> <span>  Chào mừng các bạn đến với TRUNG TÂM TIN HỌC ĐẠI HỌC MỞ TPHCM !!!     Từ 17/7/2022 đến 17/8/2022: Giảm giá mỗi khóa học 20% </span></div>
+     <nav class="picture">
+            <img src="https://csc.edu.vn/data/images/quang-cao/data-science/lo-trinh-hoc-data-science-tieu-de.png" alt="data-science">
+            <img src="http://newsky.edu.vn/wp-content/uploads/trung-tam-day-tin-hoc-cap-toc-tai-tphcm.jpg" alt="trung-tam-day-tin-hoc-cap-toc-tai-tphcm">
+            <img src="https://csc.edu.vn/data/images/slider/do-hoa/chuyen-vien-banner-1.png" alt="thiet-ke-do-hoa">
+    </nav>
+    <div class="searchBar">
+        <div id="searchLists">
+            <p> Tìm khóa hoc quan tâm <strong>Học chắc từ nền tảng - ứng dụng hiệu quả CNTT vào thực tế cuộc sống</strong></p>
+                <div id="searchList">
+                    <input type="text" id="input"  placeholder=" Nhập khóa học, môn học..." onkeyup="auto(this)">
+                    <select class="list">
+                        <option value="0">Tất cả chương trình đào tạo</option>
+                        <option value="14">Thiết kế website</option>
+                        <option value="12">Data Science &amp; Machine Learning</option>
+                        <option value="1">Đồ hoạ đa truyền thông</option>
+                        <option value="8">Internet Marketing</option>
+                        <option value="6">Kiểm thử phần mềm</option>
+                        <option value="9">Lập trình cho thiếu niên</option>
+                        <option value="5">Lập trình di động</option>
+                        <option value="4">Lập trình và CSDL</option>
+                        <option value="7">Mạng máy tính</option>
+                        <option value="3">Data Analysis</option>
+                        <option value="10">Tin học văn phòng </option>
+                        <option value="11">Tin học văn phòng chuẩn quốc tế (MOS)</option>
+                    </select>
+                    <a href="" id="network"><input type="submit" value="Tìm thông tin" onclick="init(this)"></a>
+                </div>
+            <ul class="list"></ul>
+     </div>
+    </div>
+    <main class="">
+        <div class="subjects">
+            <h1>Chương trình đào tạo</h1>
+        </div>
+        <p class="sub-title">Chương trình học đa dạng và thường xuyên cập nhật công nghệ mới.<br>Hãy để chúng tôi đồng hành cùng bạn trên hành trình chinh phục tri thức - vững vàng bước vào thế giới công nghệ 4.0.</p>
+        <div id="courses">
+            <div id="course">
+                <div id="course1">
+                    <div class="item wow animate__animated animate__bounceInDown">
+                        <figure>
+                            <img src="https://csc.edu.vn/data/images/chuong-trinh-dao-tao/do-hoa/Do_hoa_da_truyen_thong.png" alt="Do_hoa_da_truyen_thong">
+                            <figcaption>Đồ họa đa truyền thông</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item wow animate__animated animate__bounceInDown">
+                        <figure>
+                            <img src="	https://csc.edu.vn/data/images/chuong-trinh-dao-tao/thiet-ke-website/thiet_ke_website.png" alt="thiet-ke-website">
+                            <figcaption>Thiết kế website</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item wow animate__animated animate__bounceInDown">
+                        <figure>
+                            <img src="https://csc.edu.vn/data/images/chuong-trinh-dao-tao/lap-trinh-va-csdl/Lap_trinh_va_CSDL.png" alt="lap-trinh-va-csdl">
+                            <figcaption> Lập trình và CSDL</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item wow animate__animated animate__bounceInDown">
+                        <figure>
+                            <img src="	https://csc.edu.vn/data/images/chuong-trinh-dao-tao/lap-trinh-di-dong/Lap_trinh_di_dong.png" alt="lap-trinh-di-dong">
+                            <figcaption>Lập trình di động</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item wow animate__animated animate__bounceInDown">
+                        <figure>
+                            <img src="https://csc.edu.vn/data/images/chuong-trinh-dao-tao/data-science-machine-learning/machine-learning.png" alt="ta…ata-science-machine-learning">
+                            <figcaption>Data science & machine learning</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item wow animate__animated animate__bounceInDown">
+                        <figure>
+                            <img src="https://csc.edu.vn/data/images/chuong-trinh-dao-tao/kiem-thu-phan-mem/Kiem_thu_phan_mem.png" alt="kiem-thu-phan-mem">
+                            <figcaption>Kiểm thử phần mềm</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item wow animate__animated animate__bounceInDown">
+                        <figure>
+                            <img src="https://csc.edu.vn/data/images/chuong-trinh-dao-tao/mang-may-tinh/Mang_may_tinh.png" alt="mang-may-tinh">
+                            <figcaption>Mạng máy tính</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item wow animate__animated animate__bounceInDown">
+                        <figure>
+                            <img src="https://csc.edu.vn/data/images/chuong-trinh-dao-tao/internet-marketing/Internet_Marketing.png" alt="internet-marketing">
+                            <figcaption>Internet Marketing</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item wow animate__animated animate__bounceInDown">
+                        <figure>
+                            <img src="https://csc.edu.vn/data/images/chuong-trinh-dao-tao/sua-chua-thiet-bi-di-dong/logo-prokids.png" alt="lap trinh cho thieu nien">
+                            <figcaption>Lập trình cho thiếu niên</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item wow animate__animated animate__bounceInDown">
+                        <figure>
+                            <img src="https://csc.edu.vn/data/images/chuong-trinh-dao-tao/tin-hoc-van-phong/Tin_hoc_van_phong.png" alt="tin-hoc-van-phong">
+                            <figcaption>Tin học văn phòng</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item wow animate__animated animate__bounceInDown">
+                        <figure>
+                            <img src="https://csc.edu.vn/data/images/chuong-trinh-dao-tao/data-analysis/data_analysis.png" alt="data-analysis">
+                            <figcaption> Data Analysis</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item wow animate__animated animate__bounceInDown">
+                    <figure>
+                        <img src="https://csc.edu.vn/data/images/chuong-trinh-dao-tao/chung-chi-MOS/Chung_chi_MOS.png" alt="chung-chi-MOS">
+                        <figcaption>Tin học văn phòng chuẩn quốc tế (MOS)</figcaption>
+                    </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="utility wow animate__animated animate__zoomIn">
+            <div id="usefull">
+                <h1>tiện ích hỗ trợ</h1>
+                <img src="/img/decorative-clipart-end-line-1-removebg-preview.png" alt="decorative-clipart-end-line-1" >
+            </div>
+            <div class="utility-dad">
+                <div class="utility-son">
+                    <figure class="c4-izmir c4-border-bottom-left c4-image-rotate-right c4-gradient-bottom-right">
+                        <img src="https://csc.edu.vn/data/images/trang-chu/icon_1.jpg" alt="trang-chu">
+                        <figcaption class="c4-layout-bottom-left" > <p class="c4-reveal-right c4-delay-100"> Kho đề thi mẫu</p></figcaption>
+                    </figure>
+                </div>
+                <div class="utility-son">
+                    <figure class="c4-izmir c4-border-cc-3 c4-image-zoom-out c4-gradient-bottom-right">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1208/1208185.png" alt="flaticon">
+                        <figcaption > <p class="c4-rotate-down-left c4-delay-200"> Tra cứu điểm thi</p></figcaption>
+                    </figure>
+                </div>
+                <div class="utility-son">
+                    <figure class="c4-izmir c4-border-cc-1 c4-image-zoom-out c4-gradient-bottom-right">
+                        <img src="https://banner2.cleanpng.com/20191118/bxs/transparent-online-class-icon-education-icon-video-icon-5dd2b03b25c9e0.0204612715740887631548.jpg" alt="education">
+                        <figcaption class="c4-layout-bottom-right"> <p class="c4-reveal-left c4-delay-800">Lớp học trực tuyến</p></figcaption>
+                    </figure>
+                </div>
+                <div class="utility-son">
+                    <figure class="c4-izmir c4-border-center c4-image-zoom-in c4-gradient-top">
+                        <img src="https://ssl.vn/wp-content/uploads/2018/08/SSL-icon-300x271.jpg" alt="chungchi" >
+                        <figcaption> <p class="c4-fade-up"> Tra cứu chứng chỉ</p></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="course_online wow animate__animated animate__zoomIn">
+            <h1>toàn bộ khóa học online</h1>
+            <p>Toàn bộ bài giảng lý thuyết, bài tập thực hành, ôn thi chuẩn xác 99%</p>
+            <div class="course__list">
+                <div class="course__item">
+                    <a class="course__item-link" href="">
+                        <div class="course__item-date">3 tháng</div>
+                        <h1 class="course__item-place">Word</h1>
+                        <p class="course__item-price">Chỉ từ 499.999đ</p>
+                        <div class="course__item-rate">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="course__item-btn">See more</div>
+                    </a>
+                </div>
+                <div class="course__item">
+                    <a class="course__item-link" href="">
+                        <div class="course__item-date">3 tháng</div>
+                        <h1 class="course__item-place">Excel</h1>
+                        <p class="course__item-price">Chỉ từ 499.999đ</p>
+                        <div class="course__item-rate">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="course__item-btn">See more</div>
+                    </a>
+                </div>
+                <div class="course__item">
+                    <a class="course__item-link" href="">
+                        <div class="course__item-date">3 tháng</div>
+                        <h1 class="course__item-place">PowerPoint</h1>
+                        <p class="course__item-price">Chỉ từ 499.999đ</p>
+                        <div class="course__item-rate">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <div class="course__item-btn">See more</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="teachers">
+            <h1>ĐỘI NGŨ GIÁO VIÊN</h1>
+            <div class="teacher">
+                <div class="teacher_1">
+                    <div class="box_1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="content">
+                            <h2>Dương Hữu Thành</h2>
+                            <div>
+                                Chức danh: Giảng Viên <br>
+                                Học vị: Thạc sĩ <br>
+                                Môn học giảng dạy: lập trình java <br>
+                                Địa chỉ email: thanh.dh@ou.edu.vn <br>
+                            </div>     
+                        </div>
+                        <div class="img">
+                            <img src="/img/Thanh.png" alt="thanh">
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher_1">
+                    <div class="box_1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="content">
+                            <h2>Lê Xuân Trường</h2>
+                            <div>
+                                Chức danh: Trưởng khoa, Chủ tịch hội đồng TV khoa học Khoa. <br>
+                                Học vị: Tiến sĩ - Giảng viên cao cấp <br>
+                                Địa chỉ Email: truong.lx@ou.edu.vn <br>
+                            </div>     
+                        </div>
+                        <div class="img">
+                            <img src="/img/truong.png" alt="thanh">
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher_1">
+                    <div class="box_1" id="dat">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="content">
+                            <h2>Nguyễn Tiến Đạt</h2>
+                            <div>
+                                Chức danh: Giảng Viên <br>
+                                Học vị: Tiến sĩ <br>
+                                Môn học giảng dạy: thiết kế Web, lập trình di động <br>
+                                Địa chỉ email: dat.nt@ou.edu.vn <br>
+                            </div>     
+                        </div>
+                        <div class="img">
+                            <img src="/img/Dat.png" alt="thanh">
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher_1">
+                    <div class="box_1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="content">
+                            <h2>Nguyễn Trung Hậu</h2>
+                            <div>
+                                Chức danh: Trợ lý học viên <br>
+                                Học vị: Cử nhân <br>
+                                Môn học giảng dạy: <br>
+                                Địa chỉ email: hau.nt@ou.edu.vn <br>
+                            </div>     
+                        </div>
+                        <div class="img">
+                            <img src="/img/Hau.png" alt="thanh">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="map">
+            <div class="head">
+                <h1> Các trụ Sở trung tâm tin học</h1>
+            </div>
+            <div class="info">
+                <div class="map_content">
+                    <h2>LIÊN HỆ</h2><br>
+                    <select  id="District"onclick="changeMap(this)" >
+                        <h1>Các cơ sở</h1>
+                        <optgroup label="Quận 3">
+                            <option value="1">
+                                Trụ sở chính: 97 Võ Văn Tần, phường 6
+                            </option>
+                        </optgroup>
+                        <optgroup label="Quận Gò Vấp">
+                            <option value="2">
+                                371 Nguyễn Kiệm, phường 3
+                            </option>
+                        </optgroup>
+                    </select>
+                    <div class="contact">
+                        <span id="address">
+                            <span><i class="fa-solid fa-location-dot"></i>  97 Võ Văn Tần, phường 6, Quận 3, TPHCM</span>
+                        </span>
+                        <br>
+                        <span><i class="fa-solid fa-phone-volume"></i> (08) 3930 0209</span><br>
+                        <span>
+                            <span><i class="fa-solid fa-calendar"></i> Giờ làm việc: </span> <br>
+                            <ul id="list">
+                                <li><strong>Từ thứ 2 đến thứ 6: </strong> 7h30 đến 19h</li>
+                                <li><strong>Từ thứ 7 và chủ nhật: </strong>  7h30 đến 17h </li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+                <div class="MAP">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.456658453734!2d106.68817011458903!3d10.776293992321628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3ae35e3725%3A0x20c5174a47f97be3!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLkhDTSAtIEPGoSBz4bufIDE!5e0!3m2!1svi!2s!4v1658469791524!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="content">
+                <h2>Thông tin liên hệ:</h2>
+                <p><i class="fa-solid fa-location-dot add"></i> 97 Võ Văn Tần, Phường 6, Quận 3, Thành phố Hồ Chí Minh</p>
+                <p><i class="fa-solid fa-phone phone" ></i> (08) 3930 0209</p>
+                <a href="mailto:noreply@ou.edu.vn"><i class="fa-solid fa-envelope"></i> ou.edu.vn</a>
+                <p><i class="fa-solid fa-phone phone" ></i> (08) 3930 0085</p>
+                <a href="#"><i class="fa-solid fa-building-circle-arrow-right"></i> www.trungtamtinhocou.edu.vn</a>
+                <p><i class="fa-solid fa-location-dot add"></i> 371 Nguyễn Kiệm, P. 3, Q. Gò Vấp, TP. Hồ Chí Minh</p>
+            </div>
+            <div class="content1">
+                <h2>Chính sách và bản quyền</h2>
+                <p><i class="fa-solid fa-check"></i> Điều khoản dịch vụ</p>
+                <p><i class="fa-solid fa-check"></i> Chính sách bảo mật</p>
+                <div class="box">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="license">
+            <div class="line"></div>
+            <h2>Bản quyền &copy; của tôi</h2>
+            <span class="gohead">
+                <a href="#Header"><img src="/img/node.png" alt="Node"></a>
+            </span>
+        </div>
+    </footer>
+
+
+</body>
+</html>

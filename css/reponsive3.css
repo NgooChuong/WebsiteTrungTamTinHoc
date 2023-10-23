@@ -1,0 +1,255 @@
+@media  (max-width:550px) 
+{
+
+    html
+    {
+        overflow-x: hidden;
+    }
+    div.mobile-menu
+    {
+        display: block;
+        position: relative;
+    }
+    div.mobile-menu >i
+    {
+        font-size: 20px;
+       position: absolute;
+       left: 170px;
+       top:6px;
+    }
+    h1
+    {
+        font-size: 1em;
+    }
+    header .bottom .left h1, header .bottom .left p {
+        font-size: 0.8em;
+    }
+    div.menu
+    {
+        display: none;
+    }
+    div.menu > ul{
+        display: block;
+        position: absolute;
+        text-align: right;
+        left: unset;
+        
+    }
+    div.menu > ul > li > a
+    {
+      font-size: 1em;  
+        
+    }
+    header .top .right .menu ul li a span
+    {
+        border-radius: 0px;
+    }
+    header .top .right .menu ul li:first-child > a > span
+    {
+       padding-right: 97px;
+
+    }
+
+    header .sticky .right .menu ul li a span::after
+    {
+        background-color: aliceblue;
+        display: none;
+
+    }
+    header .top .right .menu ul li:nth-child(3) > a >span
+    {
+        padding-right: 72px;
+    }
+    header .top .right .menu ul li:nth-child(4) > a >span
+    {
+        padding-right: 70px;
+    }
+    header .top .right .menu ul li:nth-child(5) > a >span
+    {
+        padding-right: 91px;
+    }
+    header .top .right .menu ul li:last-child > a >span
+    {
+        padding-right: 49px;
+    }
+    div.left > i{
+        position: absolute;
+        font-size: 16px;   
+     }
+     input
+     {
+        padding-top:0rem;
+        padding-right:0rem;
+     }
+     #section1
+     {
+        margin-top: -70%;
+     }
+     #section1 .content > h1 
+     {
+        font-size: 1.5em;
+     }
+     div.content
+    {
+        margin-top: -13%;
+    }
+    #section1 .banner .box {
+        width: 47%;
+        height: 9vh;
+        margin-left: 6px;
+        padding-top: 39%;
+        margin-top: 3%;
+    }
+    #section2
+    {
+        margin-top: 10%;
+    }
+    #section2 > h1
+    {
+        font-size: 1.5em;
+    }
+    #section2 .banner .banner1 .left .pic1
+    {
+        width: 100% !important;
+        height: 200px !important;
+    }
+    #section2 .banner .banner1 .right
+    {
+        display: none;
+    }
+    #section2 .banner .banner1 .left
+    {
+        width: 100%;
+    }
+    #section2 .banner .banner1 .left > a{
+        text-decoration: none;
+        font-size: 1em;
+         color: green;
+    }
+    #section3 > h1 
+    {
+        font-size: 1.5em;
+    }
+    #section3 .products .product{
+        width: 38%;
+    }
+    h4
+    {
+        font-size: .5em;
+    }
+    #section3 .products .product input, #section5 .products .product input {
+        padding: 6px;
+    }
+    #section3 .products, #section4 > .numberPeople {
+        width: 100%;
+    }
+    #section4 > .numberPeople div
+    {
+        width: 100%;
+    }
+    #section4 > h1 {
+        font-size: 1em;
+    }
+    #section5 > h1 {
+        font-size: 1em;
+    }
+    #section5 p
+    {
+        font-size: 0.8em;
+    }
+    #section5 .products
+    {
+        display: block;
+    }
+    #section5 .products .product.product1
+    {
+        padding: 0;
+    }
+    #section5 .products .product
+    {
+        width: 100%;
+        height: 26vh;
+    }
+    #section5 .products .product .topp i, #section6 .contents .boxs .box i {
+        
+        font-size: 58px;
+        padding-top: 3%;
+    }
+    div.product1 > div.content > ul
+    {
+        margin-top: 7%;
+        font-size: 10px;
+    }
+    div.product2 > div.content > ul
+    {
+        margin-top: 1%;
+        font-size: 10px;
+    }
+    
+    #section5 .products .product2 > .topp > h3
+    {
+        font-size: 1em;
+    }
+    #section5 .products .product::after {
+        height: 100%;
+    }
+    #section5 .products .product2 > .content
+    {
+        padding-top: 18%;
+    } 
+    #section5 .products .product .content
+    {
+        display: none;
+    } 
+    #section5 .products .product:hover .content
+    {
+        display: block;
+    }   
+    #section6
+    {
+        display: none;
+    }
+    footer .top {
+        font-size: 0.8em;
+    }
+    footer .top .left, footer .top .right {
+        width: 40%;
+        padding: 0px 0px;
+    }
+     footer .middle {
+        width: 15%;
+    }
+    footer .top .right .icons {
+        width: 69%;
+        height: 9vh;
+        margin-left: 29%;
+        border-bottom: none;
+    }
+    footer .top .right .icons ul li a
+    {
+        width: 27px;
+        height: 25px;
+        line-height: 16px;
+        margin: 0;
+        font-size: 16px;
+    }
+    #photoShowContainer{
+        width: 180px;
+        height: 150px;
+        margin-bottom: 140px;
+        padding: 0;
+        border: unset;
+    }
+    #photoShowWrap{
+        height: 150px;
+    }
+    #photoShow {
+        height: 100px;
+        width: 540px;
+    }
+    #photoShow img {
+        height: 100px;
+        width: 180px;
+    }
+    
+}
